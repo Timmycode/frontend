@@ -25,7 +25,7 @@ if(!localStorage.getItem("name")){
     setName();
 } 
 else{
-    const storedName = localStorage.getItem("name");
+    const storedName = "";
     myHeader.textContent = `Welcome to Front-End Development, ${storedName}`;
 }
 
