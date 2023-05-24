@@ -9,7 +9,7 @@
 </head>
 <body>
     <h1>Login form using HTML and CSS</h1>
-    <form action="">
+    <form name="loginForm" action="#" onsubmit="return validate()" method="post">
        <div class="headingContainers">
            <h3>Sign in</h3>
            <p>Sign in with your username and password</p>
@@ -17,12 +17,12 @@
        
        <div class="mainContainers">
           <label for="username">Your Username</label>
-          <input type="text" placeholder="Enter your Username" name="username" required>
+          <input id="username" type="text" placeholder="Enter your Username" name="username" required>
            
           <br><br>
           
           <label for="psw">Your Password</label>
-          <input type="password" placeholder="Enter your Password" name="psw" required>
+          <input id="psw" type="password" placeholder="Enter your Password" name="psw" required>
           
           <br>
 
@@ -33,9 +33,10 @@
             </label>
           </div>
 
-          <button type="submit">Login</button>
+          <button type="submit" value="Submit" id="submit">Login</button>
           <p class="signUP">Not a member?<a href="#">Register here</a></p>
         </div>
    </form>
+   <script src="Scripts/validate.js"></script>
 </body>
 </html>
